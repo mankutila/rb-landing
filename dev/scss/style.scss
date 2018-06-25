@@ -9,6 +9,8 @@
 
 :root {
   font-size: 16px;
+  --primary: #62A044;
+  --primary-dark: #40851E;
 }
 
 * {
@@ -20,7 +22,8 @@ body {
   height: 100%;
   overflow-x: hidden;
   font: rem(18) 'Century Gothic', Helvetica, Arial sans-serif;
-  color: #676767
+  color: #676767;
+  line-height: 1.7;
 }
 
 a {
@@ -31,10 +34,16 @@ p, h1, h2, h3 {
   margin: 0;
 }
 
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
 ol, ul {
   padding: 0;
   margin: 0;
 }
+
+
 
 .visually-hidden {
   position: absolute;
@@ -77,8 +86,188 @@ ol, ul {
     }
   }
 }
+.header {
+  height: rem(90);
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+.header__logo {
+  margin-right: rem(71);
+}
+.main-nav {
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
+  li {
+    margin-right: rem(40);
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      border-bottom: 2px solid var(--primary);
+    }
+  }
+}
+.main-screen {
+  height: rem(690);
+  background: url(../images/berlin.jpg) no-repeat center / cover;
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: rem(620);
+  }
+}
+.main-screen__h1 {
+  color: #000;
+  font-size: rem(50);
+  margin-bottom: rem(15);
+}
+.main-screen__subheading {
+  font-size: rem(30);
+  color: var(--primary);
+  margin-bottom: rem(20);
+}
+.main-screen__flags, .main-screen__short {
+  margin-bottom: rem(30);
+}
+.main-screen__btns {
+  display: flex;
+}
+.btn {
+  display: block;
+  font-weight: 700;
+  font-size: rem(18);
+  color: #fff;
+  background-color: var(--primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: rem(20);
+  padding: rem(20) rem(38);
+  &:only-child {
+    margin-right: 0;
+  }
+  &:hover {
+    background-color: var(--primary-dark);
+  }
+}
+h2 {
+  color: #000;
+  font-size: rem(50);
+  margin-bottom: rem(70);
+}
+.features {
+  padding: rem(100) rem(83) rem(92);
+  text-align: center;
+  .btn {
+    display: inline-block;
+    margin: rem(70) auto rem(30);
+  }
+}
+.feature__icon {
+  margin-bottom: rem(40)
+}
+.feature {
+  font-size: rem(16);
+  padding: 0 rem(20);
+  h3 {
+    color: #000;
+    font-size: rem(23);
+    font-weight: 400;
+    margin-bottom: rem(20);
+  }
+}
+.information__main-txt {
+  padding: rem(87) rem(200) rem(87) rem(97);
+  background-color: #ededed;
+  width: 988/1240 * 100%;
+  h2 {
+    margin-bottom: rem(40);
+  }
+  .subheading {
+    color: var(--primary);
+    font-size: rem(25);
+    margin-bottom: rem(21);
+  }
+}
+.information__main {
+  position: relative;
+  margin-bottom: rem(157);
+}
+.information__defs {
+  position: absolute;
+  right: 0;
+  bottom: rem(-57);
+  padding: rem(71) rem(60) rem(32) rem(50);
+  background-color: var(--primary);
+  color: #fff;
+  max-width: rem(390);
+  dl {
+    font-size: rem(23);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  dt {
+    padding-right: rem(42);
+  }
+  dd {
+    margin-left: 0;
+    font-weight: 700;
+  }
+  dt, dd {
+    flex: 0 0 50%;
+    margin-bottom: rem(18);
+  }
+}
+.information__faq {
+  width: 926/1240 * 100%;
+  margin: 0 auto;
+}
+.faq-inner {
+  height: 0;
+  overflow: hidden;
+  padding-right: rem(40);
+}
+.faq {
+  label {
+    font-size: rem(25);
+    color: #000;
+    padding: rem(14) 0;
+    border-bottom: 1px solid #676767;
+    display: block;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="checkbox"]:checked ~ .faq-inner {
+    height: auto;
+  }
+  input[type="checkbox"]:checked ~ label {
+    color: var(--primary);
+    font-weight: 400;
+    border-bottom: none;
+  }
+  h3 {
+    color: #000;
+    font-weight: 400;
+    margin: rem(25) 0;
 
-
+  }
+  ul {
+    list-style: none;
+    li {
+      &:before {
+        content: '—';
+        margin-right: rem(27);
+      }
+    }
+  }
+}
 
 @import "base/responsive";
 

@@ -10,25 +10,23 @@
 </html>
 <body>
   <header class="header">
-    <div class="header__top">
-      <div class="container"><a class="logo" href="#"><img src="#" alt="Logo"></a>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="#">Torquent elementum</a></li>
-            <li><a href="#">Marbi</a></li>
-            <li><a href="#">Form</a></li>
-            <li><a href="#">Leo</a></li>
-            <li><a href="#">Lectus</a></li>
-            <li><a href="#">Eget</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="container"><a class="header__logo" href="#"><img src="/images/logo.png" alt="Logo"></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Torquent elementum</a></li>
+          <li><a href="#">Marbi</a></li>
+          <li><a href="#">Form</a></li>
+          <li><a href="#">Leo</a></li>
+          <li><a href="#">Lectus</a></li>
+          <li><a href="#">Eget</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <section class="main-screen">
     <div class="container">
       <h1 class="main-screen__h1">Lorem Ipsum Generator</h1>
-      <div class="main-screen__subheading">Amet accumsan eu ut erat ultricies</div><img class="main-screen__flags" src="" alt="Countries: Japan, Korea etc.">
+      <div class="main-screen__subheading">Amet accumsan eu ut erat ultricies</div><img class="main-screen__flags" src="/images/flags.png" alt="Countries: Japan, Korea etc." width="389" height="24">
       <div class="main-screen__short">Nec volutpat, eros suscipit, amet dolores, et tristique ultricies. Duis justo eu tincidunt. Purus quam metus. Egestas urna ac at, ut nisl convallis eu nunc, varius accusantium scelerisque in neque, orci accumsan porttitor felis neque lectus.</div>
       <div class="main-screen__btns"><a class="btn" href="#">Enquire now</a><a class="btn" href="#">Download factsheet</a></div>
     </div>
@@ -36,18 +34,15 @@
   <section class="features container">
     <h2>Torquent element</h2>
     <div class="row">
-      <div class="third feature">
-        <div class="feature__icon"></div>
+      <div class="third feature"><img class="feature__icon" src="/images/i1.png" width="113" height="113">
         <h3>Nullam nulla</h3>
         <p>Nunc vitae justo wisi, sociis eros nunc metus, ac leo et, in cum. Ut lorem pellentesque, fusce ut rutrum.</p>
       </div>
-      <div class="third feature">
-        <div class="feature__icon"></div>
+      <div class="third feature"><img class="feature__icon" src="/images/i2.png" width="113" height="113">
         <h3>Vestibulum porttitor</h3>
         <p>Vel eget venenatis euismod libero. Magna neque, proin taciti fusce donec, dui quis lacus enim laoreet, sit hendrerit dui et.</p>
       </div>
-      <div class="third feature">
-        <div class="feature__icon"></div>
+      <div class="third feature"><img class="feature__icon" src="/images/i3.png" width="113" height="113">
         <h3>Eget pharetra</h3>
         <p>Vulputate mollis sed id scelerisque ante a, mauris sed vel fermentum, est tincidunt neque orci nulla posuere pulvinar.</p>
       </div>
@@ -60,7 +55,7 @@
         <div class="subheading">Vitae ut ultricies etiam lorem sapien</div>
         <p>Bibendum ante. Ultricies odio aliquam, rhoncus metus parturient dictum faucibus dolor lacus, adipiscing quis. Torquent elementum quisque, parturient velit scelerisque vitae vulputate elit fringilla, sed pellentesque, et morbi. Nullam nulla, vestibulum porttitor amet montes sit, sint eget lorem, diam.</p>
       </div>
-      <div class="information__defs"><img class="defs-logo" src="" alt="Dirac">
+      <div class="information__defs"><img class="defs-logo" src="/images/dirac.png" alt="Dirac">
         <dl>
           <dt>Month</dt>
           <dd>February</dd>
@@ -73,10 +68,10 @@
     </div>
     <div class="information__faq">
       <div class="faq">
-        <label for="faq1">Morbi malesuada est eu</label>
         <input type="checkbox" id="faq1">
+        <label for="faq1">Morbi malesuada est eu</label>
         <div class="faq-inner">
-          <p>Learn how to:</p>
+          <h3>Learn how to:</h3>
           <ul>
             <li>Duis justo eu tincidunt gestas urna ac at, ut nisl convallis eu nunc, varius accusantium</li>
             <li>Purus quam metus. Egestas urna ac at, ut nisl convallis eu nunc, varius accusantium</li>
@@ -86,8 +81,8 @@
         </div>
       </div>
       <div class="faq">
-        <label for="faq2">Lectus nec, donec quis dolor</label>
         <input type="checkbox" id="faq2">
+        <label for="faq2">Lectus nec, donec quis dolor</label>
         <div class="faq-inner">
           <p>Inner</p>
         </div>
@@ -177,5 +172,69 @@
       </article>
     </div>
   </section>
-  <section class="students"></section>
+  <section class="students">
+    <div class="container">
+      <div class="students__txt">
+        <h2>Eget pharetra mauris</h2>
+        <p>Amet dolor aliquet rutrum. Sollicitudin amet scelerisque molestie ornare nec ultrices, mi fusce, venenatis lorem felis aliquam amet ipsum</p>
+      </div>
+    </div>
+  </section>
+  <section class="enquire">
+    <form id="enquire-form" action="" method="post">
+      <h2>Enquire now</h2>
+      <div class="row">
+        <div class="half">
+          <label class="visually-hidden" for="fname1">First name</label>
+          <input type="text" placeholder="First Name*" required name="first-name" id="fname1">
+        </div>
+        <div class="half">
+          <label class="visually-hidden" for="lname1">Last name</label>
+          <input type="text" placeholder="Last Name*" required name="last-name" id="lname1">
+        </div>
+        <div class="half">
+          <label class="visually-hidden" for="email1">E-mail</label>
+          <input type="email" placeholder="Email*" required name="email" id="email1">
+        </div>
+        <div class="half">
+          <label class="visually-hidden" for="phone1">Telephone</label>
+          <input type="tel" placeholder="Telephone" name="phone" id="phone1">
+        </div>
+        <div class="half">
+          <label class="visually-hidden" for="country1">Country of residence</label>
+          <select required name="country" id="country1">
+            <option selected>Country of residence*</option>
+            <option>Japan</option>
+            <option>Korea</option>
+          </select>
+        </div>
+        <div class="half">
+          <label class="visually-hidden" for="language1">Country of residence</label>
+          <select name="language" id="language1">
+            <option selected>Language</option>
+            <option>Japanese</option>
+            <option>Korean</option>
+          </select>
+        </div>
+        <div class="full">
+          <label class="visually-hidden" for="comments1">Comments</label>
+          <textarea placeholder="Comments" name="comments" id="comments1"></textarea>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="degree1" name="degree">
+          <label for="degree1">Do you have a bachelor’s degree / minimum of 5 years’ work experience?<span></span></label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="level1" name="level">
+          <label for="level1">Does your level of English meet the minimum requirements indicated in our requirements section?<span></span></label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="fees1" name="fees">
+          <label for="fees1">Do you understand the fees / financing required for this type of course, and do you have the means to pay for this course?<span></span></label>
+        </div>
+        <button class="btn">Enquire now</button>
+      </div>
+    </form>
+  </section>
+  <footer class="footer container">Lorem ipsum dolor sit amet, ipsa massa</footer>
 </body>

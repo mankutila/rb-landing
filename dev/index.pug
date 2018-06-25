@@ -5,7 +5,7 @@ block content
         .container
             h1.main-screen__h1 Lorem Ipsum Generator
             .main-screen__subheading Amet accumsan eu ut erat ultricies
-            img.main-screen__flags(src="", alt="Countries: Japan, Korea etc.")
+            img.main-screen__flags(src="/images/flags.png", alt="Countries: Japan, Korea etc.", width="389", height="24")
             .main-screen__short Nec volutpat, eros suscipit, amet dolores, et tristique ultricies. Duis justo eu tincidunt. Purus quam metus. Egestas urna ac at, ut nisl convallis eu nunc, varius accusantium scelerisque in neque, orci accumsan porttitor felis neque lectus.
             .main-screen__btns
                 a.btn(href="#") Enquire now
@@ -14,15 +14,15 @@ block content
         h2 Torquent element
         .row
             .third.feature
-                .feature__icon
+                img.feature__icon(src="/images/i1.png", width="113", height="113")
                 h3 Nullam nulla
                 p Nunc vitae justo wisi, sociis eros nunc metus, ac leo et, in cum. Ut lorem pellentesque, fusce ut rutrum.
             .third.feature
-                .feature__icon
+                img.feature__icon(src="/images/i2.png", width="113", height="113")
                 h3 Vestibulum porttitor
                 p Vel eget venenatis euismod libero. Magna neque, proin taciti fusce donec, dui quis lacus enim laoreet, sit hendrerit dui et.
             .third.feature
-                .feature__icon
+                img.feature__icon(src="/images/i3.png", width="113", height="113")
                 h3 Eget pharetra
                 p Vulputate mollis sed id scelerisque ante a, mauris sed vel fermentum, est tincidunt neque orci nulla posuere pulvinar.
         a.btn(href="#") Enquire now
@@ -33,7 +33,7 @@ block content
                 .subheading Vitae ut ultricies etiam lorem sapien
                 p Bibendum ante. Ultricies odio aliquam, rhoncus metus parturient dictum faucibus dolor lacus, adipiscing quis. Torquent elementum quisque, parturient velit scelerisque vitae vulputate elit fringilla, sed pellentesque, et morbi. Nullam nulla, vestibulum porttitor amet montes sit, sint eget lorem, diam.
             .information__defs
-                img.defs-logo(src="", alt="Dirac")
+                img.defs-logo(src="/images/dirac.png", alt="Dirac")
                 dl
                     dt Month
                     dd February
@@ -43,18 +43,19 @@ block content
                     dd 8 weeks
         .information__faq
             .faq
-                label(for="faq1") Morbi malesuada est eu
                 input(type="checkbox", id="faq1")
+                label(for="faq1") Morbi malesuada est eu
+
                 .faq-inner
-                    p Learn how to:
+                    h3 Learn how to:
                     ul
                         li Duis justo eu tincidunt gestas urna ac at, ut nisl convallis eu nunc, varius accusantium
                         li Purus quam metus. Egestas urna ac at, ut nisl convallis eu nunc, varius accusantium
                         li Scelerisque in neque, orci accumsan porttitor felis neque lectus vestibulum consequat et adipiscing
                         li Sit morbi penatibus, vestibulum nulla
             .faq
-                label(for="faq2") Lectus nec, donec quis dolor
                 input(type="checkbox", id="faq2")
+                label(for="faq2") Lectus nec, donec quis dolor
                 .faq-inner
                     p Inner
 
