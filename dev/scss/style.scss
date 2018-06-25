@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic');
+@import "../../node_modules/normalize.css/normalize";
+@import "helpers/variables";
+@import "base/grid";
+@import "helpers/mixins";
+@import "component/sprites";
+@import "component/buttons";
+@import "component/forms";
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  height: 100%;
+  overflow-x: hidden;
+  font: rem(18) 'Century Gothic', Helvetica, Arial sans-serif;
+  color: #676767
+}
+
+a {
+  color: inherit
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+ol, ul {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+
+.container {
+  width: rem(1240);
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  @include customCheckReset();
+  & + label {
+    width: 50%;
+    position: relative;
+  }
+  & + label span {
+    position: absolute;
+    @include size(rem(35));
+    margin: 0;
+    border: 2px solid #666;
+    background-color: #fff;
+    border-radius: 2px;
+    right: rem(-35);
+    top:-2px;
+  }
+  &:checked + label span {
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      @include size(rem(25));
+      background: url(../images/check.svg) no-repeat;
+      background-size: contain;
+      bottom: 3px;
+      left: rem(7);
+    }
+  }
+}
+
+
+
+@import "base/responsive";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
